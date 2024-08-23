@@ -20,6 +20,7 @@ As here the categories are equally distributed, there is no specific need for th
 The reshaped data is as follows:
 **Methods**
 The Models here are created with Dropout, BatchNormalization and Data Argumentation in the first place as asked in the bonus question.
+
 **Shallow Neural Network Model (Model 1):**
 Design Choices:
 1.Flatten Layer: Flattens the 28x28 input images to a 1D array, suitable for a dense neural network.
@@ -30,6 +31,7 @@ Design Choices:
 Justification:
 1.The architecture is relatively shallow, suitable for basic pattern recognition tasks.
 2.Batch normalization and dropout aid in regularization and prevent overfitting.
+
 **Convolutional Neural Network Model (Model 2):**
 Design Choices:
 1.Convolutional Layers: Two convolutional layers with max pooling reduce spatial dimensions.
@@ -61,20 +63,31 @@ A similar model was designed in order to  train the dataset in the same models b
 Lastly, a new and Final approach was designed to save the best weights which looked as follows:
 III. Results and Discussion
 The impact of the dropout layers on the learning curves is evident in the performance metrics of our three models. Comparing the results of the last epochs:
+
 **METHOD 1	            TRAINING LOSS	 TRAINING ACCURACY	 VALIDATION LOSS	VALIDATION ACCURACY**
+
 SHALLOW NEURAL NETWORK	0.4715	        82.88%	            0.4020	          85.07%
+
 CNN MODEL	              0.2487	        91.00%	            0.2748	          90.28%
+
 DEEPER CNN MODEL	      0.2953	        89.55%	            0.2986	          89.58%
 
 **METHOD 2	            TRAINING LOSS	 TRAINING ACCURACY	VALIDATION LOSS	 VALIDATION ACCURACY**
+
 SHALLOW NEURAL NETWORK	0.3827	        86.13%	            0.3717	          86.7%
+
 CNN MODEL	              0.1819	        93.55%	            0.2505	          91.28%
+
 DEEPER CNN MODEL	      0.2500	        92.52%	            0.2919	          90.16%
 
 **METHOD 3	            TRAINING LOSS	 TRAINING ACCURACY	VALIDATION LOSS	 VALIDATION ACCURACY**
+
 SHALLOW NEURAL NETWORK	0.3297	        88.34 %	            0.3379	          87.63%
+
 CNN MODEL	              0.1065	        96.20%	            0.2841	          91.47%
+
 DEEPER CNN MODEL	      0.1114	        96.17%	            0.3918	          89.98%
+
 In summary, the incorporation of dropout layers across all models has a positive impact on their learning curves. It allows for better generalization, leading to lower validation losses and improved accuracy. Each model, with its distinct architecture, benefits from dropout layers, showcasing enhanced performance compared to a baseline model. Model 2 stands out with a significant validation accuracy of 90.28%, emphasizing the effectiveness of dropout layers in deep learning models. We can also see that if we increase the training epochs, we can increase some accuracy as the curve is going higher for CNN and Deeper CNN models.
 Analysis:
 Model Performance:
